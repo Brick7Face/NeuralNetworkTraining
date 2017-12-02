@@ -78,7 +78,8 @@ public class Main {
 		ArrayList<Cluster> clusteredData;
 		switch(selection){
 		case 1:	
-			KMeans kmeans = new KMeans();
+			int k = 5;
+			KMeans kmeans = new KMeans(data, k);
 			clusteredData = kmeans.cluster(data);
 			break;
 		case 2:	
